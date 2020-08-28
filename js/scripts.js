@@ -38,7 +38,8 @@ Pizza.prototype.price = function() {
   } else if (this.pizzaTopping3 == "jalepeno") {
       price = price + 2;
   }
-  this.price.push(price);
+  //this.price.push(price);
+  console.log("hi")
   return price;
 }
 
