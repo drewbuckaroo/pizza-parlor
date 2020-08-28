@@ -37,8 +37,9 @@ Pizza.prototype.price = function() {
     price = price + 2;
   } else if (this.pizzaTopping3 == "jalepeno") {
       price = price + 2;
-  }
-  console.log(price);
+  } 
+  //console.log(price);
+  price.push();
   return price;
 }
 
@@ -56,8 +57,10 @@ $(document).ready(function() {
     const pizzaTopping3 = $("#pizzaTopping3").val();
 
     let newPizza = new Pizza(pizzaSize, pizzaTopping1, pizzaTopping2, pizzaTopping3);
-    $("#result").text(result);
-    $("#result").append(newPizza);
+    console.log(newPizza);
+    console.log(newPizza.price);
+    $("#result").text();
+    $("#result").show();
     event.preventDefault();
     
 
