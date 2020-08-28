@@ -40,7 +40,7 @@ Pizza.prototype.price = function() {
   } 
   //console.log(price);
   price.push();
-  return price;
+  return Pizza.price;
 }
 
 
