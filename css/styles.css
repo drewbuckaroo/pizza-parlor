@@ -1,19 +1,51 @@
 body {
-  background-image: url(/img/PIZZABOX.jpg)
+  background-image: url(/img/PIZZABOX.jpg);
+  margin: auto;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  
   }
 
 h1 {
   background-color: red;
-  text-align: center
+  text-align: center;
+  font-family: cursive;
+  box-sizing: border-box;
+  border: 15px dotted yellow;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px; 
 }
 
 h3 {
   background-color: red;
-  text-align: center
+  text-align: center;
+  font-family: cursive;
+  box-sizing: border-box;
+  border: 5px double yellow;
+  padding: 10px;
+  margin: auto;
 }
 
 label {
   background-color:red;
-  text-align: center
+  text-align: center;
+  font-family: cursive;
+  box-sizing: border-box;
+  border: 5px double yellow;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+p {
+  background-color: red;
+  
+}
+
+button {
+  background-color:
 }
 

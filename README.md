@@ -10,9 +10,9 @@ A pizza parlor website created with jQuery and HTML where the user can select a 
 
 
 ### Specs
-* [] User can select what size pizza they would like.
+* [x] User can select what size pizza they would like.
 
-* [] User can select what toppings they would like on 
+* [x] User can select what toppings they would like on 
 their pizza.
 
 * [] Application will display total cost of selected pizza.

@@ -55,9 +55,9 @@ $(document).ready(function() {
     const pizzaTopping2 = $("#pizzaTopping2").val();
     const pizzaTopping3 = $("#pizzaTopping3").val();
 
-    let newPizza = Pizza(pizzaSize, pizzaTopping1, pizzaTopping2, pizzaTopping3);
+    let newPizza = new Pizza(pizzaSize, pizzaTopping1, pizzaTopping2, pizzaTopping3);
     $("#result").text(result);
-    $("#result").show(newPizza);
+    $("#result").append(newPizza);
 
   });
  
