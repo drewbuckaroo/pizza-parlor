@@ -38,8 +38,7 @@ Pizza.prototype.price = function() {
   } else if (this.pizzaTopping3 == "jalepeno") {
       price = price + 2;
   }
-  //this.price.push(price);
-  console.log("hi")
+  console.log(price);
   return price;
 }
 
@@ -50,14 +49,15 @@ Pizza.prototype.price = function() {
 $(document).ready(function() {
   $("form#pizzaSelection").submit(function(event) {
     event.preventDefault();
+    //console.log("submit reached")
     const pizzaSize = $("#pizzaSize").val();
     const pizzaTopping1 = $("#pizzaTopping1").val();
     const pizzaTopping2 = $("#pizzaTopping2").val();
     const pizzaTopping3 = $("#pizzaTopping3").val();
 
     let newPizza = Pizza(pizzaSize, pizzaTopping1, pizzaTopping2, pizzaTopping3);
-    $("#price").text(price);
-    $("#price").show(newPizza.price());
+    $("#result").text(result);
+    $("#result").show(newPizza);
 
   });
  
