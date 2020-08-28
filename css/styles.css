@@ -42,7 +42,13 @@ label {
 
 p {
   background-color: red;
-  
+  font-family: cursive;
+  text-align: center;
+  box-sizing: border-box;
+  border: 5px double yellow;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 button {

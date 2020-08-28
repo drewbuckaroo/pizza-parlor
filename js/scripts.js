@@ -58,6 +58,8 @@ $(document).ready(function() {
     let newPizza = new Pizza(pizzaSize, pizzaTopping1, pizzaTopping2, pizzaTopping3);
     $("#result").text(result);
     $("#result").append(newPizza);
+    event.preventDefault();
+    
 
   });
  
