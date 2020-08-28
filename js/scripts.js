@@ -39,8 +39,7 @@ Pizza.prototype.price = function() {
       price = price + 2;
   } 
   //console.log(price);
-  price.push();
-  return Pizza.price;
+  return price;
 }
 
 
@@ -59,7 +58,7 @@ $(document).ready(function() {
     let newPizza = new Pizza(pizzaSize, pizzaTopping1, pizzaTopping2, pizzaTopping3);
     console.log(newPizza);
     console.log(newPizza.price);
-    $("#result").text();
+    $("#result").text(newPizza.price);
     $("#result").show();
     event.preventDefault();
     
