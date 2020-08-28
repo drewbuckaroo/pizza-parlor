@@ -30,7 +30,7 @@ h3 {
 }
 
 label {
-  background-image: url(/img/pizza.jpeg);
+  background-color: red;
   text-align: center;
   font-family: cursive;
   box-sizing: border-box;
@@ -42,7 +42,7 @@ label {
 }
 
 p {
-  background-image: url(/img/pizza.jpeg);
+  background-color:red;
   font-family: cursive;
   text-align: center;
   box-sizing: border-box;
