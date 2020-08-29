@@ -5,41 +5,40 @@ function Pizza(pizzaSize, pizzaTopping1, pizzaTopping2, pizzaTopping3) {
   this.pizzaTopping1 = pizzaTopping1;
   this.pizzaTopping2 = pizzaTopping2;
   this.pizzaTopping3 = pizzaTopping3;
-
+  this.price = 0;
 }
 
-Pizza.prototype.price = function() {
-  let price;
+Pizza.prototype.totalPrice = function() {
   if (this.pizzaSize == "small") {
-    price = 10;
+    this.price += 10;
   } else if (this.pizzaSize == "medium") {
-    price = 20;
+    this.price += 20;
   } else if (this.pizzaSize == "large") {
-    price = 30;
+    this.price += 30;
   }
   if (this.pizzaTopping1 == "pepperoni") {
-    price = price + 5;
+    this.price = this.price + 5;
   } else if (this.pizzaTopping1 == "pineapple") {
-    price = price + 2;
+    this.price = this.price + 2;
   } else if (this.pizzaTopping1 == "jalepeno") {
-      price = price + 2;
+      this.price = this.price + 2;
   }
   if (this.pizzaTopping2 == "pepperoni") {
-    price = price + 5;
+    this.price = this.price + 5;
   } else if (this.pizzaTopping2 == "pineapple") {
-    price = price + 2;
+    this.price = this.price + 2;
   } else if (this.pizzaTopping2 == "jalepeno") {
-      price = price + 2;
+      this.price = this.price + 2;
   }
   if (this.pizzaTopping3 == "pepperoni") {
-    price = price + 5;
+    this.price = this.price + 5;
   } else if (this.pizzaTopping3 == "pineapple") {
-    price = price + 2;
+    this.price = this.price + 2;
   } else if (this.pizzaTopping3 == "jalepeno") {
-      price = price + 2;
+      this.price = this.price + 2;
   } 
-  //console.log(price);
-  return price;
+  //console.log(this.price);
+  return this.price;
 }
 
 
@@ -56,13 +55,11 @@ $(document).ready(function() {
     const pizzaTopping3 = $("#pizzaTopping3").val();
 
     let newPizza = new Pizza(pizzaSize, pizzaTopping1, pizzaTopping2, pizzaTopping3);
-    console.log(newPizza);
-    console.log(newPizza.price);
-    $("#result").text(newPizza.price);
+    let finalPrice = newPizza.totalPrice();
+    //console.log(finalPrice);
+    $("#result").text(finalPrice);
     $("#result").show();
-    event.preventDefault();
     
-
   });
  
 });
