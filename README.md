@@ -15,7 +15,7 @@ A pizza parlor website created with jQuery and HTML where the user can select a 
 * [x] User can select what toppings they would like on 
 their pizza.
 
-* [] Application will display total cost of selected pizza.
+* [x] Application will display total cost of selected pizza.
 
 
 ## Setup/Installation Requirements
